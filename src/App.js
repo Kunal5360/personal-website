@@ -119,7 +119,7 @@ function Experience() {
           <li>Extracted and structured CRM data for reporting, supporting insights through basic ETL workflows and dashboards.</li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -155,7 +155,7 @@ function Skills() {
           <p>Analytical Skill, Problem Solving, Communication, Technical Documentation, Agile, Detail Oriented</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -170,7 +170,7 @@ function Contact() {
     >
       <h2>Contact</h2>
       <p>Want to connect or discuss a project? Reach out via <a href="mailto:kunalnagdawane11@gmail.com">email</a> or connect on <a href="https://linkedin.com/in/kunalnagdawane" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-    </section>
+    </motion.section>
   );
 }
 
