@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './App.css';
 
 function App() {
@@ -17,7 +18,12 @@ function App() {
 
 function Header() {
   return (
-    <header className="header">
+    <motion.header
+      className="header"
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       <h1>Kunal Nagdawane</h1>
       <p className="subtitle">Data Engineer | Azure | Databricks | Python</p>
       <div className="links">
@@ -25,25 +31,37 @@ function Header() {
         <a href="https://linkedin.com/in/kunalnagdawane" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/Kunal5380" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
-    </header>
+    </motion.header>
   );
 }
 
 function Home() {
   return (
-    <section id="home">
+    <motion.section
+      id="home"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
       <h2>About Me</h2>
       <p>
         Results-driven Data Engineer with 3 years of experience in designing, building, and maintaining scalable data pipelines and ETL workflows. 
         Proficient in SQL, Python, Spark, and cloud platforms (AWS, Azure, GCP). Strong expertise in data modeling, warehousing, and optimizing data infrastructure for performance and reliability.
       </p>
-    </section>
+    </motion.section>
   );
 }
 
 function Projects() {
   return (
-    <section id="projects">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.15 }}
+    >
       <h2>Projects</h2>
       <div className="project">
         <h3>Formula1 Racing Analytics with Azure Technologies</h3>
@@ -65,13 +83,19 @@ function Projects() {
           <li>Deployed managed CI/CD workflows using <b>Azure DevOps</b>, ensuring version control and streamlined releases.</li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
 function Experience() {
   return (
-    <section id="experience">
+    <motion.section
+      id="experience"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.3 }}
+    >
       <h2>Work Experience</h2>
       <div className="job">
         <h3>Senior System Engineer</h3>
@@ -101,7 +125,13 @@ function Experience() {
 
 function Skills() {
   return (
-    <section id="skills">
+    <motion.section
+      id="skills"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.45 }}
+    >
       <h2>Skills</h2>
       <div className="skills-list">
         <div>
@@ -131,7 +161,13 @@ function Skills() {
 
 function Contact() {
   return (
-    <section id="contact">
+    <motion.section
+      id="contact"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.6 }}
+    >
       <h2>Contact</h2>
       <p>Want to connect or discuss a project? Reach out via <a href="mailto:kunalnagdawane11@gmail.com">email</a> or connect on <a href="https://linkedin.com/in/kunalnagdawane" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </section>
@@ -140,9 +176,14 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="footer">
+    <motion.footer
+      className="footer"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.8 }}
+    >
       <span>© {new Date().getFullYear()} Kunal Nagdawane</span>
-    </footer>
+    </motion.footer>
   );
 }
 
