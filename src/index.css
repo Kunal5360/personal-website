@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f8f9fa;
+  color: #22223b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #4f8cff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
